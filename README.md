@@ -1,8 +1,3 @@
-<html>
-<head>
-  <title>Jianhua Sun</title>
-</head>
-
 <style>
   .navbar {
     position: fixed;
@@ -340,4 +335,3 @@ Xiaoqian Wu, Yong-Lu Li, **Jianhua Sun**, Cewu Lu
 </table>
 
 </div>
-</html>
