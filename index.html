@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Jianhua Sun</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <html>
+<head>
+  <title>Jianhua Sun</title>
+</head>
+<style>
+  /* 固定导航栏 */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;  /* 左右对齐 */
+    padding: 1px 20px;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* 给内容留出空间 */
+  .content {
+    padding-top: 70px; /* 留出空间，避免被固定的导航栏遮挡 */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+    /* 添加目标位置的顶部间距 */
+  h1, h2, h3, h4, h5, h6 {
+    padding-top: 70px;  /* 使内容向下偏移，避免被导航栏遮挡 */
+    margin-top: -70px;   /* 向上偏移，避免出现多余空白 */
+    border-bottom: none;
+  }
+
+    /* 添加目标位置的顶部间距 */
+  section {
+    padding-top: 70px;  /* 使内容向下偏移，避免被导航栏遮挡 */
+    margin-top: -70px;   /* 向上偏移，避免出现多余空白 */
+  }
+
+</style>
+<!-- 固定导航栏 -->
+<div class="navbar">
+  <!-- 左对齐部分 -->
+  <div class="left">
+    <a href="#home">Jianhua Sun</a>
+  </div>
+  <!-- 右对齐部分 -->
+  <div class="right" style="margin-right: 60px;">
+    <a href="#home">Home</a>
+    <a href="#research">Research</a>
+    <!-- <a href="#group">Group</a> -->
+    <!-- <a href="#teaching">Teaching</a> -->
+    <!-- <a href="#talks">Talks</a> -->
+    <a href="#publications">Publications</a>
+  </div>
+</div>
+<!-- 页面其他内容 -->
+<div class="content" style="margin-left: 80px;" style="margin-right: 80px;">
+<section id="home">
+<div style="display: flex; align-items: center;">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\jianhua.png" alt="GitHub Logo" width="150" style="margin-right: 60px;">
+<div>
+<h1 id="jianhua-sun">Jianhua Sun</h1>
+<p><strong>Office:</strong> School of Artificial Intelligence, Room 209<br>
+<strong>Email:</strong> gothic [at] sjtu (dot) edu (dot) cn<br>
+<a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;hl=zh-CN&amp;user=L0hoY3kAAAAJ">Google Scholar</a> / <a href="https://soai.sjtu.edu.cn/">SJTU Profiles</a></p>
+</div>
+<div style="margin-left: 150px;">
+<h4 id="research-communities">Research Communities</h4>
+<ul>
+<li><a href="https://sai.sjtu.edu.cn/">School of Artificial Intelligence, Shanghai Jiao Tong University (SAI, SJTU)</a></li>
+<li><a href="https://www.sii.edu.cn/">Shanghai Innovation Institute (SII)</a></li>
+<li><a href="https://www.noematrix.ai/">Shanghai Noematrix Intelligence Technology Ltd</a></li>
+</ul>
+</div>
+</div>
+</section>
+<h1 id=""></h1>
+<p>I am an Assistant Professor in <a href="https://sai.sjtu.edu.cn/">the School of Artificial Intelligence</a> at Shanghai Jiao Tong University. I finished my Ph.D. in the Department of Computer Science at Shanghai Jiao Tong University in 2025, under the supervision of <a href="https://scholar.google.com.hk/citations?hl=en&amp;user=QZVQEWAAAAAJ&amp;view_op=list_works">Prof. Cewu Lu</a>. Prior to that, I received my Bachelor's degree (Computer Science) from Shanghai Jiao Tong University in 2020.</p>
+<h1 id="-1"></h1>
+<h2 id="research">Research</h2>
+<p>My research interests lie in <font color=red>Physical AI</font> --- teaching AI to learn physical models of real-world concepts in order to build machines that possess a rich understanding of the world for perceiving, reasoning, interacting with the environment, and communicating with humans. My research spans from physical world representations to learning algorithms, including</p>
+<ul>
+<li><strong>representations of physical world concepts</strong> in an analytic form, enabling rigorous numerical computation and simulation</li>
+<li><strong>structured priors</strong> that encode phsyical laws and social rules, guiding AI in commonsense reasoning</li>
+<li><strong>physical world perception, generation and planning algorithms</strong> adhere to the fundamental rules of how the world operates</li>
+<li><strong>lifelong learning</strong> to optimize physical-world models and evolve learning algorithms</li>
+</ul>
+<p>In addition to developing the representations and algorithms themselves, we simultaneously explore their applications in various domains:</p>
+<ul>
+<li><strong>robotics and embodied AI</strong></li>
+<li><strong>simulation and world model</strong></li>
+<li><strong>multi-modal fundation model</strong></li>
+<li><strong>autonomous driving</strong></li>
+<li><strong>AI-assisted design and content generation</strong></li>
+</ul>
+<p><font color=red><strong>Recruitment:</strong> Looking for self-motivated students (Master &amp; Ph.D. spring &amp; fall, undergraduate interns, visitors) to join us in <a href="https://www.mvig.org/">MVIG</a>. Feel free to email me directly with your CV (Subject: Recruitment + Institution + Field of Study + Academic Year + Name).</font></p>
+<h1 id="-2"></h1>
+<h2 id="publications">Publications</h2>
+<p>(* and † indicate equal contribution and corresponding author)</p>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\ArtiPG.png" alt="ArtiPG" style="width: 100%; width: 200px; height: 100px;">
+</td>
+<td width="80%">
+<p><strong><a href="https://arxiv.org/pdf/2412.14974">Arti-PG: A Toolbox for Procedurally Synthesizing Large-Scale and Diverse Articulated Objects with Rich Annotations</a></strong><br>
+IEEE/CVF International Conference on Computer Vision (ICCV), 2025<br>
+<strong>Jianhua Sun</strong>*, Yuxuan Li*, Jiude Wei*, Longfei Xu, Nange Wang, Yining Zhang, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\IAN.png" alt="IAN" style="width: 100%; width: 200px; height: 100px;">
+</td>
+<td width="80%">
+<p><strong><a href="https://openreview.net/pdf?id=DCpukR83sw">Interactive Adjustment for Human Trajectory Prediction with Individual Feedback</a></strong><br>
+International Conference on Learning Representations (ICLR), 2025<br>
+<strong>Jianhua Sun</strong>*, Yuxuan Li*, Liang Chai, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\AOTNet.png" alt="AOTNet" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://ojs.aaai.org/index.php/AAAI/article/view/33609/35764">Discovering Conceptual Knowledge with Analytic Ontology Templates for Articulated Objects</a></strong><br>
+AAAI Conference on Artificial Intelligence (AAAI), 2025<br>
+<strong>Jianhua Sun</strong>*, Yuxuan Li*, Longfei Xu, Jiude Wei, Liang Chai, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\ConceptFactory.png" alt="ConceptFactory" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/89d19544d314740d11c0974ca3ddaf70-Paper-Datasets_and_Benchmarks_Track.pdf">ConceptFactory: Facilitate 3D Object Knowledge Annotation with Object Conceptualization</a></strong><br>
+Conference on Neural Information Processing Systems (NeurIPS), 2024<br>
+<strong>Jianhua Sun</strong>*, Yuxuan Li*, Longfei Xu, Nange Wang, Jiude Wei, Yining Zhang, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\PCCSNet++.png" alt="PCCSNet++" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://ieeexplore.ieee.org/document/10254381">Modality Exploration, Retrieval and Adaptation for Trajectory Prediction</a></strong><br>
+IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024<br>
+<strong>Jianhua Sun</strong>, Yuxuan Li, Liang Chai, Cewu Lu</p>
+<p><strong><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Sun_Three_Steps_to_Multimodal_Trajectory_Prediction_Modality_Clustering_Classification_and_ICCV_2021_paper.pdf">Three Steps to Multimodal Trajectory Prediction: Modality Clustering, Classification and Synthesis</a></strong><br>
+IEEE/CVF International Conference on Computer Vision (ICCV), 2021<br>
+<strong>Jianhua Sun</strong>, Yuxuan Li, Hao-Shu Fang, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\Instaboost++.png" alt="Instaboost++" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://link.springer.com/article/10.1007/s11263-023-01807-9">InstaBoost++: Visual Coherence Principles for Unified 2D/3D Instance Level Data Augmentation</a></strong><br>
+International Journal of Computer Vision (IJCV), 2023<br>
+<strong>Jianhua Sun</strong>*, Hao-Shu Fang*, Yuxuan Li, Runzhong Wang, Minghao Gou and Cewu Lu</p>
+<p><strong><a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Fang_InstaBoost_Boosting_Instance_Segmentation_via_Probability_Map_Guided_Copy-Pasting_ICCV_2019_paper.pdf">Instaboost: Boosting Instance Segmentation via Probability Map Guided Copy-Pasting</a></strong><br>
+IEEE/CVF International Conference on Computer Vision (ICCV), 2019<br>
+Hao-Shu Fang*, <strong>Jianhua Sun</strong>*, Runzhong Wang*, Minghao Gou, Yonglu Li, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\Stimulus.png" alt="Stimulus" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Sun_Stimulus_Verification_Is_a_Universal_and_Effective_Sampler_in_Multi-Modal_CVPR_2023_paper.pdf">Stimulus Verification is a Universal and Effective Sampler in Multi-Modal Human Trajectory Prediction</a></strong><br>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023<br>
+<strong>Jianhua Sun</strong>*, Yuxuan Li*, Liang Chai, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\AOE.png" alt="AOE" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Sun_Human_Trajectory_Prediction_With_Momentary_Observation_CVPR_2022_paper.pdf">Human Trajectory Prediction with Momentary Observation</a></strong><br>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022<br>
+<strong>Jianhua Sun</strong>, Yuxuan Li, Liang Chai, Hao-Shu Fang, Yong-Lu Li, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\InstaBoost3D.png" alt="InstaBoost3D" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://ojs.aaai.org/index.php/AAAI/article/download/20128/19887">Correlation Field for Boosting 3D Object Detection in Structured Scenes</a></strong><br>
+AAAI Conference on Artificial Intelligence (AAAI), 2022<br>
+<strong>Jianhua Sun</strong>, Hao-Shu Fang, Xianghui Zhu, Jiefeng Li, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\P-Flow.png" alt="P-Flow" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://drive.google.com/file/d/1vKIg-m-Ikan0ZNyjFMTNfH7uQP8iuUKZ/view">Unified and Fast Human Trajectory Prediction Via Conditionally Parameterized Normalizing Flow</a></strong><br>
+IEEE Robotics and Automation Letters (RA-L)<br>
+<strong>Jianhua Sun</strong>, Zehao Wang, Jiefeng Li, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\RSBG.png" alt="RSBG" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Sun_Recursive_Social_Behavior_Graph_for_Trajectory_Prediction_CVPR_2020_paper.pdf">Recursive Social Behavior Graph for Trajectory Prediction</a></strong><br>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020<br>
+<strong>Jianhua Sun</strong>, Qinhong Jiang, Cewu Lu</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td width="20%">
+<img src="file:///c:\Users\Jianhua\OneDrive\paper\myown\行政文件\个人主页材料\paper\openpasta.jpg" alt="openpasta" style="width: 100%; max-width: 200px; height: auto;">
+</td>
+<td width="80%">
+<p><strong><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/5edb57c05c81d04beb716ef1d542fe9e-Paper-Conference.pdf">Symbol-LLM: Leverage Language Models for Symbolic System in Visual Human Activity Reasoning</a></strong><br>
+Conference on Neural Information Processing Systems (NeurIPS), 2023<br>
+Xiaoqian Wu, Yong-Lu Li, <strong>Jianhua Sun</strong>, Cewu Lu</p>
+</td>
+</tr>
+</table>
+</div>
+</html>
+            
+            
+        </body>
+        </html>
