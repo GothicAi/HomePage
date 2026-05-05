@@ -1,3 +1,86 @@
+<html>
+<head>
+  <title>Jianhua Sun</title>
+</head>
+
+<style>
+  /* 固定导航栏 */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;  /* 左右对齐 */
+    padding: 1px 20px;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* 给内容留出空间 */
+  .content {
+    padding-top: 70px; /* 留出空间，避免被固定的导航栏遮挡 */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+    /* 添加目标位置的顶部间距 */
+  h1, h2, h3, h4, h5, h6 {
+    padding-top: 70px;  /* 使内容向下偏移，避免被导航栏遮挡 */
+    margin-top: -70px;   /* 向上偏移，避免出现多余空白 */
+    border-bottom: none;
+  }
+
+    /* 添加目标位置的顶部间距 */
+  section {
+    padding-top: 70px;  /* 使内容向下偏移，避免被导航栏遮挡 */
+    margin-top: -70px;   /* 向上偏移，避免出现多余空白 */
+  }
+
+</style>
+
+<!-- 固定导航栏 -->
+<div class="navbar">
+  <!-- 左对齐部分 -->
+  <div class="left">
+    <a href="#home">Jianhua Sun</a>
+  </div>
+
+  <!-- 右对齐部分 -->
+  <div class="right" style="margin-right: 60px;">
+    <a href="#home">Home</a>
+    <a href="#research">Research</a>
+    <!-- <a href="#group">Group</a> -->
+    <!-- <a href="#teaching">Teaching</a> -->
+    <!-- <a href="#talks">Talks</a> -->
+    <a href="#publications">Publications</a>
+  </div>
+</div>
+
+<!-- 页面其他内容 -->
+<div class="content" style="margin-left: 80px;" style="margin-right: 80px;">
+
+<section id="home">
+<div style="display: flex; align-items: center;">
+<img src="jianhua.png" alt="GitHub Logo" width="150" style="margin-right: 60px;">
+
+<div>
+
 # Jianhua Sun
 
 **Office:** School of Artificial Intelligence, Room 209  
@@ -39,7 +122,9 @@ In addition to developing the representations and algorithms themselves, we simu
   - **autonomous driving**
   - **AI-assisted design and content generation**
 
+
 <font color=red>**Recruitment:** Looking for self-motivated students (Master & Ph.D. spring & fall, undergraduate interns, visitors) to join us in [MVIG](https://www.mvig.org/). Feel free to email me directly with your CV (Subject: Recruitment + Institution + Field of Study + Academic Year + Name).</font>
+
 
 #
 
@@ -50,12 +135,80 @@ In addition to developing the representations and algorithms themselves, we simu
 <tr>
 <td width="20%">
 
+<img src="paper/NoiseAddDepth.png" alt="NoiseAddDepth" style="width: 100%; width: 200px; height: 100px;">
+
+</td>
+<td width="80%">
+
+**[Learning Realistic Depth via Physics-Grounded Noise Disentanglement with Semantic-Geometric Collaboration](TBD)**  
+International Conference on Machine Learning (ICML), 2026  
+Xiujian Liang, Jiacheng Liu, Mingyang Sun, Qichen He, Anda Cheng, Cewu Lu, **Jianhua Sun†**  
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="20%">
+
+<img src="paper/GeoCAD.png" alt="GeoCAD" style="width: 100%; width: 200px; height: 100px;">
+
+</td>
+<td width="80%">
+
+**[Bridging Tokens and Geometry: Token-wise 3D Supervision for CAD Generation](TBD)**  
+International Conference on Machine Learning (ICML), 2026  
+Yijia Guan, **Jianhua Sun†**  
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="20%">
+
+<img src="paper/blueprint.png" alt="blueprint" style="width: 100%; width: 200px; height: 100px;">
+
+</td>
+<td width="80%">
+
+**[Empowering Precise Embodied Agents with Executable Analytic Concepts as Semantic-Physical Blueprints](TBD)**  
+International Joint Conference on Artificial Intelligence (IJCAI), 2026  
+Mingyang Sun, Jiude Wei, Qichen He, Donglin Wang, Cewu Lu, **Jianhua Sun†**  
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="20%">
+
+<img src="paper/AOTLLM.png" alt="AOTLLM" style="width: 100%; width: 200px; height: 100px;">
+
+</td>
+<td width="80%">
+
+**[Physically Ground Commonsense Knowledge for Articulated Object Manipulation with Analytic Concepts](TBD)**  
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026  
+Jiude Wei, Yuxuan Li, Cewu Lu, **Jianhua Sun†**  
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="20%">
+
 <img src="paper/ArtiPG.png" alt="ArtiPG" style="width: 100%; width: 200px; height: 100px;">
 
 </td>
 <td width="80%">
 
-**[Arti-PG: A Toolbox for Procedurally Synthesizing Large-Scale and Diverse Articulated Objects with Rich Annotations](https://arxiv.org/pdf/2412.14974)**  
+**[Arti-PG: A Toolbox for Procedurally Synthesizing Large-Scale and Diverse Articulated Objects with Rich Annotations](https://openaccess.thecvf.com/content/ICCV2025/papers/Sun_Arti-PG_A_Toolbox_for_Procedurally_Synthesizing_Large-Scale_and_Diverse_Articulated_ICCV_2025_paper.pdf)**  
 IEEE/CVF International Conference on Computer Vision (ICCV), 2025  
 **Jianhua Sun***, Yuxuan Li*, Jiude Wei*, Longfei Xu, Nange Wang, Yining Zhang, Cewu Lu  
 
@@ -221,7 +374,7 @@ AAAI Conference on Artificial Intelligence (AAAI), 2022
 <td width="80%">
 
 **[Unified and Fast Human Trajectory Prediction Via Conditionally Parameterized Normalizing Flow](https://drive.google.com/file/d/1vKIg-m-Ikan0ZNyjFMTNfH7uQP8iuUKZ/view)**  
-IEEE Robotics and Automation Letters (RA-L)  
+IEEE Robotics and Automation Letters (RA-L), 2022  
 **Jianhua Sun**, Zehao Wang, Jiefeng Li, Cewu Lu  
 
 </td>
@@ -265,3 +418,4 @@ Xiaoqian Wu, Yong-Lu Li, **Jianhua Sun**, Cewu Lu
 </table>
 
 </div>
+</html>
