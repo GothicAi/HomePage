@@ -4,20 +4,6 @@
 **Email:** gothic [at] sjtu (dot) edu (dot) cn  
 [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=L0hoY3kAAAAJ) / [SJTU Profiles](https://soai.sjtu.edu.cn/)
 
-</div>
-
-<div style="margin-left: 150px;">
-
-#### Research Communities
-  - [School of Artificial Intelligence, Shanghai Jiao Tong University (SAI, SJTU)](https://sai.sjtu.edu.cn/)
-  - [Shanghai Innovation Institute (SII)](https://www.sii.edu.cn/)
-  - [Shanghai Noematrix Intelligence Technology Ltd](https://www.noematrix.ai/)
-
-</div>
-
-</div>
-</section>
-
 #
 
 I am an Assistant Professor in [the School of Artificial Intelligence](https://sai.sjtu.edu.cn/) at Shanghai Jiao Tong University. I finished my Ph.D. in the Department of Computer Science at Shanghai Jiao Tong University in 2025, under the supervision of [Prof. Cewu Lu](https://scholar.google.com.hk/citations?hl=en&user=QZVQEWAAAAAJ&view_op=list_works). Prior to that, I received my Bachelor's degree (Computer Science) from Shanghai Jiao Tong University in 2020. 
