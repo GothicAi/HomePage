@@ -38,6 +38,40 @@ In addition to developing the representations and algorithms themselves, we simu
 <tr>
 <td width="20%">
 
+<img src="paper/NeuIDO.png" alt="NeuIDO" style="width: 100%; width: 200px; height: 100px;">
+
+</td>
+<td width="80%">
+
+**[NeuIDO: Neural Intrinsic Dynamics Operator for Physics-Informed 4D World Models](TBD)**  
+European Conference on Computer Vision (ECCV), 2026  
+Jiajing Lin, Xin Zhang, **Jianhua Sun†**  
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="20%">
+
+<img src="paper/StructPolicy.png" alt="StructPolicy" style="width: 100%; width: 200px; height: 100px;">
+
+</td>
+<td width="80%">
+
+**[StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts](TBD)**  
+European Conference on Computer Vision (ECCV), 2026  
+Zehao Du, Jiude Wei, Cewu Lu, **Jianhua Sun†**  
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="20%">
+
 <img src="paper/NoiseAddDepth.png" alt="NoiseAddDepth" style="width: 100%; width: 200px; height: 100px;">
 
 </td>
